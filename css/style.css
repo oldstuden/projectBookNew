@@ -52,9 +52,7 @@ img {
   font-size: 32px;
   line-height: 1.18; /* 38/32 */
   margin-bottom: 40px;
-  max-width: 260px;
   height: 38px;
-  white-space: nowrap;
 }
 .books {
   color: #4f2ee8;
@@ -112,6 +110,34 @@ img {
   color: #fff;
   background-color: #4f2ee8;
   border-color: transparent;
+}
+.btn-up {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #4f2ee8;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.btn-up::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(-45deg);
+  top: 40%;
+  left: 35%;
+}
+.btn-up_hide {
+  display: none;
+}
+.btn-up:hover {
+  background-color: rgba(79, 46, 232, 0.7);
 }
 @media screen and (min-width: 768px) {
   .section {
